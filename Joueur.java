@@ -1,6 +1,6 @@
 public class Joueur extends  Personne{
      public Main mainjoueur;
-
+      int sold = 500;
 public  void ajouterCarte(Carte carte) {
     mainjoueur.listCartes.add(carte);
     }
