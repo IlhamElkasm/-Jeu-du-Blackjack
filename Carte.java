@@ -29,11 +29,9 @@ public class Carte { // Correction du nom de classe
         this.valeurS = valeur;
     }
 
-    @Override
-    public String toString() {
-        return  '{'+
-                "couleur='" + couleur + '\'' +
-                ", valeur=" + valeurS +
-                '}';
+
+    public void AfficheCarte() {
+        System.out.println("couleur= " + couleur.getNom()  + " valeur= " + valeurS.getValeur());
+
     }
 }

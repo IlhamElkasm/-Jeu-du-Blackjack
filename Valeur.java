@@ -1,23 +1,23 @@
 enum Valeur {
-    AS("As", 1),
-    TWO("Two", 2),
-    THREE("Three", 3),
-    FOUR ("Four", 4),
-    FIVE("Five", 5),
-    SIX("Six", 6),
-    SEVEN("Seven", 7),
-    EIGHT("Eight", 8),
-    NINE("Nine", 9),
-    TEN("Ten", 10),
-    VALET("Valet", 10),
-    DAME("Dame", 10),
-    ROI("Roi", 10);
-    private final String nom;
+    AS(1, "As"),
+    TWO(2, "Two"),
+    THREE(3, "Three"),
+    FOUR(4, "Four"),
+    FIVE(5, "Five"),
+    SIX(6, "Six"),
+    SEVEN(7, "Seven"),
+    EIGHT(8, "Eight"),
+    NINE(9, "Nine"),
+    TEN(10, "Ten"),
+    VALET(10, "Valet"),
+    DAME(10, "Dame"),
+    ROI(10, "Roi");
     private final int valeur;
+    private final String nom;
 
-    Valeur(String nom, int valeur) {
+    Valeur(int valeur, String nom) {
+        this.valeur= valeur;
         this.nom = nom;
-        this.valeur = valeur;
     }
 
     public String getNom() {
